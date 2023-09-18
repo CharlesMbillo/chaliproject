@@ -13,7 +13,7 @@
 </body>
 
 </html>
-<form action="/contact/" method="post">
+<form action="/user/" method="post">
     {% csrf_token %}
     <input type="text" name="first_name" placeholder="First name">
     <input type="text" name="last_name" placeholder="Last name">
@@ -21,7 +21,7 @@
     <input type="email" name="email" placeholder="Email address">
     <input type="submit" value="Submit">
   </form>
-  <form action="/contact/" method="post">
+  <form action="/user/" method="post">
     {% csrf_token %}
     <input type="text" name="first_name" placeholder="First name">
     <input type="text" name="last_name" placeholder="Last name">
