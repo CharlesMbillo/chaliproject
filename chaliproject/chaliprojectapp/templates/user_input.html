@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input Form</title>
+</head>
+<body>
+    <h2>User Input Form</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
+<form action="/contact/" method="post">
+    {% csrf_token %}
+    <input type="text" name="first_name" placeholder="First name">
+    <input type="text" name="last_name" placeholder="Last name">
+    <input type="text" name="phone_number" placeholder="Phone number">
+    <input type="email" name="email" placeholder="Email address">
+    <input type="submit" value="Submit">
+  </form>
+  <form action="/contact/" method="post">
+    {% csrf_token %}
+    <input type="text" name="first_name" placeholder="First name">
+    <input type="text" name="last_name" placeholder="Last name">
+    <input type="text" name="phone_number" placeholder="Phone number">
+    <input type="email" name="email" placeholder="Email address">
+    <input type="submit" value="Submit">
+  </form>
+  
